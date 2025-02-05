@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#header-div {
+    background-color: lightskyblue;
+    padding: 15px;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#input-div {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#guess-input {
+    height: auto;
+    width: 100px;
+    background-color: lightblue;
+    padding: 10px;
+    font-size: 30px;
+}
+
+button {
+    width: 120px;
+    height: auto;
+    font-size: 20px;
+    padding: 5px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+#result-div {
+    height: 80px;
+    background-color: lightblue;
+    padding: 20px;
+    font-size: 40px;
+}
+
+#result-div, #new-game-div, #guess-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#guess-history-div {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    background-color: blue;
+}
+
+h2 {
+    padding: 15px;
+    color: white;
+}
+
+#guess-container {
+    padding: 0 40px;
+    gap: 80px;
+    justify-content: left;
+}
+
+.previous-guess {
+    padding: 10px 30px;
+    font-size: 120px;
+    border-radius: 10px;
+}
+
+#new-game-div {
+    background-color: lightblue;
+    flex: 1;
+}
+
+.higher-than-guess {
+    background-color: green;
+}
+
+.lower-than-guess {
+    background-color: red;
+}
+
+.correct-guess {
+    background-color: darkorchid;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="temp-converter.css">
+</head>
+<body>
+    <div id="content-container">
+        <h1>Celsius-Fahrenheit Converter</h1>
+        <p>Enter temperature value of celsius or fahrenheit (without unit):</p>
+        <input type="text" id="temp" name="temp" class="input-fields">
+
+        <p>Choose unit to convert into:</p>
+        <select name="unit" id="unit" class="input-fields" required>
+            <option value="">Select a unit</option>
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+        </select>
+
+        <button>Convert</button>
+        <p id="conversion-text">Converted Temperature: </p>
+    </div>
+
+    <script src="temp-converter.js"></script>
+</body>
+</html>

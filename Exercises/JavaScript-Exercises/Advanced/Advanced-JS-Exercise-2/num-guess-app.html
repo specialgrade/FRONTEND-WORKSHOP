@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game Web App</title>
+    <link rel="stylesheet" href="num-guess-app.css">
+</head>
+<body>
+    <div id="header-div">
+        <h1>Number Guessing Game</h1>
+        <p>Guess the number chosen by the machine from 1-100 (inclusive) in only 5 maximum 
+           guesses. Enter your guess in the input and click the "Guess!" button. For each failed guess, the machine will tell if the unknown number is 
+           higher or lower than your previous guess. The history of your guesses will be displayed, and a new game button will appear after a round.
+        </p>
+    </div>
+
+    <div id="input-div">
+        <input type="text" id="guess-input" name="guess-num">
+        <button id="guess-btn">Guess!</button>
+    </div>
+
+    <div id="result-div">
+        
+    </div>
+
+    
+    <div id="guess-history-div">
+        <h2>Previous Guesses:</h2>
+        <div id="guess-container">
+
+        </div>
+    </div>
+
+    <div id="new-game-div">
+        <button>New Game</button>
+    </div>
+    
+    <script src="num-guess-app.js"></script>
+</body>
+</html>
