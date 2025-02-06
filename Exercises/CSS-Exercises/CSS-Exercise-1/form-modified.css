@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Panel - Gradient */
+.left {
+    width: 50%;
+    background: linear-gradient(to left, #FFE4BD, #94A8FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    width: 180px;
+    margin-bottom: 15px;
+}
+
+.logo-container h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0E0E0E;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Right Panel - Login Form */
+.right {
+    width: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 350px;
+    text-align: center;
+}
+
+/* Login Title */
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #3D2DD8;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+/* Login Button */
+button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #412DCC, #8D3DFE);
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #351caf, #702dcc);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
