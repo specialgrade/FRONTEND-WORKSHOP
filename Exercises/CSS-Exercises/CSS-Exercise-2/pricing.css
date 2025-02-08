@@ -1,1 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 64px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #120D86 0%, #3B29C2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #120D86;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pricing-card {
+    background: #FFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #120D86;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #120D86;
+    margin-bottom: 15px;
+}
+
+.price span {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.feature-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.feature-list li {
+    font-size: 16px;
+    color: #120D86;
+    margin: 5px 0;
+}
+
+.cta-button {
+    background: linear-gradient(90deg, #822AB0 0%, #3B29C2 100%);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background: linear-gradient(90deg, #351caf, #702dcc);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
